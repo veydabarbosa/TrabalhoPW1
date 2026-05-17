@@ -1,1 +1,157 @@
 <!--Pagina inicial: Nicole-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecalho">
+    <a href="index.html" class="logo-link">
+      <div class="logo">
+        <span class="logo-icon">🐾</span>
+        <span class="logo-texto">Pet<strong>Hub</strong></span>
+      </div>
+    </a>
+    <div id="area-usuario" class="area-usuario"></div>
+  </header>
+
+  <nav class="barra-menu">
+    <ul class="menu-lista">
+      <li class="menu-item">
+        <a href="#">Serviços</a>
+        <ul class="submenu">
+          <li><a href="#">Banho & Tosa</a></li>
+          <li><a href="#">Consulta Veterinária</a></li>
+          <li><a href="#">Hotel Pet</a></li>
+          <li><a href="#">Adestramento</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Produtos</a>
+        <ul class="submenu">
+          <li><a href="#">Ração</a></li>
+          <li><a href="#">Brinquedos</a></li>
+          <li><a href="#">Acessórios</a></li>
+          <li><a href="#">Higiene</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Sobre Nós</a>
+        <ul class="submenu">
+          <li><a href="#">Nossa História</a></li>
+          <li><a href="#">Equipe</a></li>
+          <li><a href="#">Depoimentos</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Blog</a>
+        <ul class="submenu">
+          <li><a href="#">Dicas de Saúde</a></li>
+          <li><a href="#">Nutrição</a></li>
+          <li><a href="#">Comportamento</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Contato</a>
+        <ul class="submenu">
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Localização</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </li>
+      <li class="menu-item menu-login">
+        <a href="login.html">Login</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="conteudo-principal">
+
+    <section class="hero">
+      <div class="hero-bolhas">
+        <span class="bolha b1">🐶</span>
+        <span class="bolha b2">🐱</span>
+        <span class="bolha b3">🐰</span>
+        <span class="bolha b4">🦜</span>
+        <span class="bolha b5">🐾</span>
+      </div>
+
+      <div class="hero-conteudo">
+        <div class="hero-imagem-wrap">
+          <img
+            src="../img/amora-rique.png"
+            alt="Cachorro feliz sendo cuidado no PetHub"
+            class="hero-imagem"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hero-imagem-placeholder" style="display:none;">
+            <span>🐶</span>
+          </div>
+        </div>
+
+        <div class="hero-texto">
+          <span class="tag-destaque">✨ Novidade: Hotel Pet disponível!</span>
+          <h1 class="hero-titulo">
+            Seu pet merece<br/>
+            <em>o melhor cuidado</em>
+          </h1>
+          <p class="hero-desc">
+            No <strong>PetHub</strong>, unimos amor, tecnologia e profissionalismo para oferecer
+            a melhor experiência para o seu animal de estimação. Banho &amp; tosa, consultas
+            veterinárias, hotel pet e muito mais, tudo em um só lugar, com carinho e segurança
+            que você e seu bichinho merecem.
+          </p>
+          <div class="hero-botoes">
+            <a href="#servicos" class="btn-primario">Ver serviços</a>
+            <a href="login.html" class="btn-secundario">Entrar na conta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-cards" id="servicos">
+      <h2 class="secao-titulo">O que oferecemos</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icone">🛁</div>
+          <h3>Banho &amp; Tosa</h3>
+          <p>Deixamos seu pet cheiroso e bem-cuidado com produtos premium e muito carinho.</p>
+        </div>
+        <div class="card">
+          <div class="card-icone">🩺</div>
+          <h3>Clínica Veterinária</h3>
+          <p>Consultas, vacinas e exames com veterinários experientes e apaixonados por animais.</p>
+        </div>
+        <div class="card">
+          <div class="card-icone">🏨</div>
+          <h3>Hotel Pet</h3>
+          <p>Viaje tranquilo sabendo que seu pet está em ótimas mãos, confortável e feliz.</p>
+        </div>
+        <div class="card">
+          <div class="card-icone">🎓</div>
+          <h3>Adestramento</h3>
+          <p>Profissionais certificados para tornar a convivência com seu pet ainda mais harmoniosa.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa-destaque">
+      <p>🐾 Mais de <strong>5.000 pets</strong> atendidos &nbsp;|&nbsp; ⭐ Avaliação <strong>4.9/5</strong> &nbsp;|&nbsp; 📍 <strong>3 unidades</strong> na cidade</p>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <span>© 2026 PetHub &nbsp;|&nbsp; Nicole Bruch &nbsp;·&nbsp; Veyda Barbosa &nbsp;·&nbsp; Vitor Wöstehoff</span>
+  </footer>
+
+</body>
+</html>

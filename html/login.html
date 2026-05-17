@@ -1,1 +1,108 @@
-<!--Página de login: Vitor-->
+<!--Pagina Login: Vitor-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetHub – Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecalho">
+    <a href="index.html" class="logo-link">
+      <div class="logo">
+        <span class="logo-icon">🐾</span>
+        <span class="logo-texto">Pet<strong>Hub</strong></span>
+      </div>
+    </a>
+    <div id="area-usuario" class="area-usuario"></div>
+  </header>
+
+  <nav class="barra-menu">
+    <ul class="menu-lista">
+      <li class="menu-item">
+        <a href="#">Serviços</a>
+        <ul class="submenu">
+          <li><a href="#">Banho & Tosa</a></li>
+          <li><a href="#">Consulta Veterinária</a></li>
+          <li><a href="#">Hotel Pet</a></li>
+          <li><a href="#">Adestramento</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Produtos</a>
+        <ul class="submenu">
+          <li><a href="#">Ração</a></li>
+          <li><a href="#">Brinquedos</a></li>
+          <li><a href="#">Acessórios</a></li>
+          <li><a href="#">Higiene</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Sobre Nós</a>
+        <ul class="submenu">
+          <li><a href="#">Nossa História</a></li>
+          <li><a href="#">Equipe</a></li>
+          <li><a href="#">Depoimentos</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Blog</a>
+        <ul class="submenu">
+          <li><a href="#">Dicas de Saúde</a></li>
+          <li><a href="#">Nutrição</a></li>
+          <li><a href="#">Comportamento</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Contato</a>
+        <ul class="submenu">
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Localização</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </li>
+      <li class="menu-item menu-login">
+        <a href="login.html">Login</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="pagina-login">
+    <div class="card-login">
+      <div class="login-icone">🐾</div>
+      <h1>Bem-vindo de volta!</h1>
+      <p class="subtitulo">Entre na sua conta PetHub</p>
+
+      <div class="form-grupo">
+        <label for="campo-login">Login</label>
+        <input type="text" id="campo-login" placeholder="Seu usuário" autocomplete="username" />
+        <span class="erro" id="erro-campo-login"></span>
+      </div>
+
+      <div class="form-grupo">
+        <label for="campo-senha">Senha</label>
+        <div class="input-senha-wrap">
+          <input type="password" id="campo-senha" placeholder="Sua senha" autocomplete="current-password" />
+          <button type="button" class="btn-olho" id="olho-senha-login">👁</button>
+        </div>
+        <span class="erro" id="erro-campo-senha"></span>
+      </div>
+
+      <button class="btn-autenticar" id="btn-autenticar">Autenticar</button>
+
+      <p class="login-rodape">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <span>© 2026 PetHub &nbsp;|&nbsp; Nicole Bruch &nbsp;·&nbsp; Veyda Barbosa &nbsp;·&nbsp; Vitor Wöstehoff</span>
+  </footer>
+
+</body>
+</html>

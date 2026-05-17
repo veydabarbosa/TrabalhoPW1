@@ -1,1 +1,182 @@
-<!--Página de cadastro: Veyda-->
+<!--Pagina Cadastro: Veyda-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetHub – Meu Cadastro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecalho">
+    <a href="index.html" class="logo-link">
+      <div class="logo">
+        <span class="logo-icon">🐾</span>
+        <span class="logo-texto">Pet<strong>Hub</strong></span>
+      </div>
+    </a>
+    <div id="area-usuario" class="area-usuario"></div>
+  </header>
+
+  <nav class="barra-menu">
+    <ul class="menu-lista">
+      <li class="menu-item">
+        <a href="#">Serviços</a>
+        <ul class="submenu">
+          <li><a href="#">Banho & Tosa</a></li>
+          <li><a href="#">Consulta Veterinária</a></li>
+          <li><a href="#">Hotel Pet</a></li>
+          <li><a href="#">Adestramento</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Produtos</a>
+        <ul class="submenu">
+          <li><a href="#">Ração</a></li>
+          <li><a href="#">Brinquedos</a></li>
+          <li><a href="#">Acessórios</a></li>
+          <li><a href="#">Higiene</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Sobre Nós</a>
+        <ul class="submenu">
+          <li><a href="#">Nossa História</a></li>
+          <li><a href="#">Equipe</a></li>
+          <li><a href="#">Depoimentos</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Blog</a>
+        <ul class="submenu">
+          <li><a href="#">Dicas de Saúde</a></li>
+          <li><a href="#">Nutrição</a></li>
+          <li><a href="#">Comportamento</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Contato</a>
+        <ul class="submenu">
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Localização</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </li>
+      <li class="menu-item menu-login">
+        <a href="login.html">Login</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="pagina-cadastro">
+    <div class="card-cadastro">
+      <h1>Meu Cadastro 🐾</h1>
+
+      <div class="seletor-tema">
+        <p>Estilo do formulário:</p>
+        <div class="radio-grupo">
+          <label class="radio-opcao">
+            <input type="radio" name="tema" value="default" checked />
+            Default
+          </label>
+          <label class="radio-opcao">
+            <input type="radio" name="tema" value="custom" />
+            Custom
+          </label>
+        </div>
+      </div>
+
+      <form class="form-cadastro" id="form-cadastro" onsubmit="return false;">
+
+        <div class="form-grupo">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" placeholder="Ex: Nicole Silva" />
+          <span class="erro" id="erro-nome"></span>
+        </div>
+
+        <div class="form-grupo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Ex: nicole@email.com" />
+          <span class="erro" id="erro-email"></span>
+        </div>
+
+        <div class="form-grupo">
+          <label for="login-cadastro">Login</label>
+          <input type="text" id="login-cadastro" placeholder="Escolha um nome de usuário" autocomplete="username" />
+          <span class="erro" id="erro-login-cadastro"></span>
+        </div>
+
+        <div class="form-grupo">
+          <label for="senha-cadastro">Senha</label>
+          <div class="input-senha-wrap">
+            <input type="password" id="senha-cadastro" placeholder="Mín. 13 caracteres, maiúscula, minúscula e número" autocomplete="new-password" />
+            <button type="button" class="btn-olho" id="olho-senha-cadastro">👁</button>
+          </div>
+          <span class="erro" id="erro-senha-cadastro"></span>
+        </div>
+
+        <div class="form-grupo">
+          <label for="nascimento">Data de nascimento</label>
+          <input type="date" id="nascimento" />
+        </div>
+
+        <div class="form-grupo">
+          <label>Tipo de pet</label>
+          <div class="radio-pets">
+            <label class="radio-pet">
+              <input type="radio" name="tipo-pet" value="cachorro" /> 🐶 Cachorro
+            </label>
+            <label class="radio-pet">
+              <input type="radio" name="tipo-pet" value="gato" /> 🐱 Gato
+            </label>
+            <label class="radio-pet">
+              <input type="radio" name="tipo-pet" value="outro" /> 🐾 Outro
+            </label>
+          </div>
+        </div>
+
+        <div class="form-grupo">
+          <label>Serviços de interesse</label>
+          <label class="checkbox-grupo">
+            <input type="checkbox" value="banho-tosa" /> Banho &amp; Tosa
+          </label>
+          <label class="checkbox-grupo">
+            <input type="checkbox" value="veterinario" /> Consulta Veterinária
+          </label>
+          <label class="checkbox-grupo">
+            <input type="checkbox" value="hotel" /> Hotel Pet
+          </label>
+          <label class="checkbox-grupo">
+            <input type="checkbox" value="adestramento" /> Adestramento
+          </label>
+        </div>
+
+        <div class="form-grupo">
+          <label for="origem">Como nos conheceu?</label>
+          <select id="origem">
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="instagram">Instagram</option>
+            <option value="indicacao">Indicação de amigo</option>
+            <option value="google">Google</option>
+            <option value="panfleto">Panfleto</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-submit" id="btn-cadastrar">Salvar cadastro</button>
+
+      </form>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <span>© 2026 PetHub &nbsp;|&nbsp; Nicole Bruch &nbsp;·&nbsp; Veyda Barbosa &nbsp;·&nbsp; Vitor Wöstehoff</span>
+  </footer>
+
+</body>
+</html>
